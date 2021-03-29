@@ -1,26 +1,27 @@
 * {
     padding: 0;
     margin: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: sans-serif;
 }
 
 body {
-    background-image: url("darkbackground.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-position: center; /* Center the image */
-    height: 1080px; /* You must set a specified height */
+    
+    /* background-image: url("pancakeBackground.jpg"); */
+    
+    /* background-color: rgb(241, 141, 123); */
+    height: 736px
     
 }
 
+
 .topnav {
+    margin-top: 5px;
     text-align: center;
     height: 30px;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
     text-decoration: none;
 }
 
@@ -31,13 +32,31 @@ a {
 }
 
 .active {
-    background-color: rgba(0, 128, 128, 0.548);
+    color: rgb(231, 60, 60);
 }
 
 h1 {
+    font-family: 'Cinzel', serif;
     text-align: center;
     font-size: 55px;
     position: relative;
-    top: 150px;
+    top: 40px;
 }
 
+.menuContainer {
+    position: relative;
+    top: 70px;
+    width: 300px;
+    margin: auto;
+    border: 1px solid rgb(241, 226, 203);
+    padding: 20px;
+}
+
+img {
+    width: 300px;
+    height: 167px;
+}
+
+.eachMenu {
+    margin-top: 20px;
+}
