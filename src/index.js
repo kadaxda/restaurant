@@ -1,36 +1,45 @@
 
 // Imports
 import { loadHome } from "./home"
+import { loadMenu } from "./menu"
+
+
 
 function init() {
     loadHome();
 }
 
-
-// init();
-
-function loadMenu() {
-    let content = document.querySelector("#content");
-    document.body.style.backgroundColor = 'rgb(' + [241, 141, 123].join(',') + ')';
-    
-    let topnav = document.createElement("div");
-    topnav.classList.add("topnav");
-    content.appendChild(topnav);
-
-    let navHome = document.createElement("a");
-    navHome.textContent = "Home";
-    topnav.appendChild(navHome);
-
-    let navMenu = document.createElement("a");
-    navMenu.textContent = "Menu";
-    navMenu.classList.add("active");
-    topnav.appendChild(navMenu);
-
-    let navContact = document.createElement("a");
-    navContact.textContent = "Home";
-    topnav.appendChild(navContact);
-
+function wipeOut() {
+    let content = document.querySelector("#content")
+    document.body.removeChild(content)
+    document.body.style.backgroundImage = "none";
 }
 
 init();
+check();
+
+
+function check() {
+    let navContent = document.querySelectorAll(".navContent");
+        console.log(navContent)
+
+        navContent.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                if(tab.innerHTML == "Menu") {
+                    wipeOut();
+                    loadMenu();
+                    check();
+                } else if(tab.innerHTML == "Home") {
+                    wipeOut();
+                    loadHome();
+                    check();
+                }
+            })
+        }) 
+    }
+
+function loadContact() {
+
+}
+
 
