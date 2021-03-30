@@ -29,6 +29,7 @@ a {
     font-size: 20px;
     text-decoration: none;
     padding: 0px 30px;
+    cursor: pointer;
 }
 
 .active {
@@ -43,10 +44,18 @@ h1 {
     top: 40px;
 }
 
+.homeText {
+    color: rgb(36, 36, 53);
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
 .menuContainer {
     position: relative;
     top: 70px;
     width: 300px;
+    height: 92vh;
     margin: auto;
     border: 1px solid rgb(241, 226, 203);
     padding: 20px;
@@ -59,4 +68,6 @@ img {
 
 .eachMenu {
     margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
