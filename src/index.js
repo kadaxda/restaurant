@@ -2,6 +2,7 @@
 // Imports
 import { loadHome } from "./home"
 import { loadMenu } from "./menu"
+import { loadContact } from "./contact"
 
 
 
@@ -14,9 +15,6 @@ function wipeOut() {
     document.body.removeChild(content)
     document.body.style.backgroundImage = "none";
 }
-
-init();
-check();
 
 
 function check() {
@@ -33,13 +31,15 @@ function check() {
                     wipeOut();
                     loadHome();
                     check();
+                } else if(tab.innerHTML == "Contact") {
+                    wipeOut();
+                    loadContact();
+                    check();
                 }
             })
         }) 
     }
 
-function loadContact() {
 
-}
-
-
+init();
+check();
