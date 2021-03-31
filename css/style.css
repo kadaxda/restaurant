@@ -71,3 +71,33 @@ img {
     margin-bottom: 20px;
     
 }
+
+h2 {
+    position: relative;
+    top: 60px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.form {
+    width: 350px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+
+input[type="text"] {
+    width : 250px;
+}
+
+
+button[type="submit"] {
+    display: block;
+    margin-top: 13px;
+    padding: 5px;
+}
+
+#MsgInput {
+    padding: 50px 0px;
+}
